@@ -1,11 +1,10 @@
 // user interfsce logic
 $(document).ready(function(){
   $("#footer form").submit(function(event) {
-    $(".user1").append("#input");
+    var number = $("input#input1").val();
+    $(".user1").append("<ul><li>"+number+"</li></ul>"+"<br>");
+    event.preventDefault();
+    var userinput = "#"
+
   });
-     event.preventDefault();
-
-
-  });
-
 });
