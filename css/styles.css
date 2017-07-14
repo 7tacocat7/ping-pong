@@ -1,3 +1,16 @@
 body{
   background-color: lightblue;
 }
+
+#sidebar{
+  background-color: pink;
+}
+#header{
+  background-color: yellow;
+}
+#content{
+  background-color: teal;
+}
+#footer{
+  background-color: purple;
+}
