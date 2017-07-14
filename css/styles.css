@@ -4,13 +4,22 @@ body{
 
 #sidebar{
   background-color: pink;
+  margin-right: 25px;
+  border: 5px;
+  padding-right: 35px;
 }
 #header{
   background-color: lightblue;
 }
 #content{
-  background-color: teal;
+  background-color: lightblue;
+  margin-left: 25px;
+  border: 5px;
+  padding-left: 35px;
 }
 #footer{
-  background-color: purple;
+  background-color: lightblue;
+  margin-left: 25px;
+  border: 5px;
+  padding-left: 35px;
 }
