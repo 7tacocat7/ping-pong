@@ -1,6 +1,8 @@
 // user interfsce logic
 $(document).ready(function(){
-  $("form#cryptoForm").submit(function(event){
+  $("#footer form").submit(function(event) {
+    $(".user1").append("#input");
+  });
      event.preventDefault();
 
 

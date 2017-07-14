@@ -23,3 +23,7 @@ body{
   border: 5px;
   padding-left: 35px;
 }
+.well {
+  background-color: lightblue;
+  border-radius: dotted;
+}
