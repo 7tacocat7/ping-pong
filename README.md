@@ -13,8 +13,8 @@ _Ping-Pongr is a  webpage that takes a number input from a user and returns a ra
 
 | Behavior      | Input         | Output        |
 | ------------- | ------------- | ------------- |
-|Take a number and produce the numbers range|11|(1,2,3,4,5,6,7,8,9,0,11)|
-|               |               |               |
+|Take a number and produce the numbers range in a list|11|(1,2,3,4,5,6,7,8,9,0,11)|
+|Take look at each number in the range starting with the lowest value and determine if the numbers is divisible by 3 if it is not divisible by 3 seperate the number from the list and pass it along to another list if it is divisible by 3 replace the number with the word "ping" and pass it along to the other list | (1,2,3,4,) |  (1,2,"ping,4")             |
 |               |               |               |
 |               |               |               |
 |               |               |               |

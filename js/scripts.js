@@ -8,6 +8,7 @@ $(document).ready(function(){
     $(".user1").append("<li>"+number+"</li>"+"<br>");
     // assigns the variable number = to the value of the imput of the form
       var number = $("input#input1").val();
+      var rangeinput = .parsInt(number)
     // prevents the document from refreshing
     event.preventDefault();
     var userinput = "#"
