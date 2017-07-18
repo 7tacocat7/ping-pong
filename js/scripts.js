@@ -1,9 +1,16 @@
+// Business logic
+var numberarray =[]
+for (i = 0; i <=number;i++) {
+  numberarray.push(i);
+}
+
+
 // user interfsce logic
 
 
 // loads document
 $(document).ready(function(){
-  // gets imput from form under the footer id and appends variable umber to the  class user1
+  // gets input from form under the footer id and appends variable umber to the  class user1
   $("#footer form").submit(function(event) {
     var number = $("input#input1").val();
     $(".user1").append("<li>"+number+"</li>"+"<br>");
