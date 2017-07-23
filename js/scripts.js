@@ -1,26 +1,41 @@
 //
-// var number = $("input#input1").val();
+// var number = userInput.parsInt();
 // buisness logic
-var numberArray =[]
+// var numberArray =[]
+// var userInput = parseInt($("input#input1").val());
+// for (var index = 0; index <= userInput; index += 1) {
+//     this.push(numberArray);
+// }
+
+var countToInputNumber = function(count) {
+  var numberArray = [];
+    for (var index = 0; i<= count; i ++){
+      if(index%3 === 0){
+        countToInputNumber.push("ping")
+      }
+    }
+}
 
 
 
+
+
+
+
+  // user interfsce logic
 // loads document
+
 $(document).ready(function(){
   $("#footer form").submit(function(event) {
-
-    alert(" thanks for submitting your number")
-
-    // user interfsce logic
     var userInput = $("input#input1").val();
     $(".user1").append("<li>"+userInput+"</li>"+"<br>");
+  forEach
+    // removes appended list items when clicked
     $("span.user1").children("li").click(function() {
       $(this).remove();
-      alert(" look! you removed a number")
     });
-
     $(".user1").show();
-      alert(" you got to the end");
-      event.preventDefault();
+    event.preventDefault();
   });
+
 });
