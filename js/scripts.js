@@ -16,7 +16,7 @@ var numbers = [];
 for (var i = start; i < inputnumber+1; i++) {
     numbers.push(i);
 }
-// counts up to the input number and puses values to array^
+// counts up to the input number and pushes values to array^
 var pingpong = numbers.map(function(number) {
   if (number === 0){
       return number;
@@ -34,7 +34,7 @@ var pingpong = numbers.map(function(number) {
    return number;
       }
 });
-//creates a loop from that replaces values (divisible by 3,5,15) with the strings 'ping' 'pong' and 'pingpong' and places values in a new array called pingpong^
+//creates a loop  that replaces values (divisible by 3,5,15) with the strings 'ping' 'pong' and 'pingpong' and places values in a new array called pingpong^
 
 
 // end of buisness logic
