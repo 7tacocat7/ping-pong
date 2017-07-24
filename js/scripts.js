@@ -11,7 +11,10 @@ var countToInputNumber = function(count) {
   var numberArray = [];
     for (var index = 0; i<= count; i ++){
       if(index%3 === 0){
-        countToInputNumber.push("ping")
+        countToInputNumber.push("ping");
+      }
+      else if (index%5 ===0) {
+        countToInputNumber.push("pong")
       }
     }
 }
