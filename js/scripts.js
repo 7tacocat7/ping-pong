@@ -39,27 +39,30 @@
 
 
 
-var start = 0;
-var inputnumber = parseInt($("input#input1").val());
-var numbers = [];
-for (var i = start; i < inputnumber+1; i++) {
-    numbers.push(1);
-}
-
-var pingpong = numbers.map(function(number) {
-  if (number%5 === 0 && number%15 === 0){
-      return "ping-pong";
-   }
-      else if (number%5 === 0){
-      return "pong";
-      }
-   else if (number%3 === 0){
-      return "ping";
-      }
-   else {
-   return number;
-      }
-});
+// var start = 0;
+// var inputnumber = parseInt($("input#input1").val());
+// var numbers = [];
+// for (var i = start; i < inputnumber+1; i++) {
+//     numbers.push(i);
+// }
+//
+// var pingpong = numbers.map(function(number) {
+//   if (number === 0){
+//       return number;
+//    }
+//       else if (number%5 === 0 && number%15 === 0){
+//       return "ping-pong";
+//       }
+//    else if (number%5 === 0){
+//       return "pong";
+//       }
+//       else if (number%3 === 0){
+//          return "ping";
+//          }
+//    else {
+//    return number;
+//       }
+// });
 
 
 
@@ -75,20 +78,42 @@ var pingpong = numbers.map(function(number) {
 $(document).ready(function(){
   $("#footer form").submit(function(event) {
   var userInput = $("input#input1").val();
-    alert(userInput)
+    alert(userInput);
+    // alert(pingpong);
+    var start = 0;
+    var inputnumber = parseInt($("input#input1").val());
+    var numbers = [];
+    for (var i = start; i < inputnumber+1; i++) {
+        numbers.push(i);
+    }
+
+    var pingpong = numbers.map(function(number) {
+      if (number === 0){
+          return number;
+       }
+          else if (number%5 === 0 && number%15 === 0){
+          return "ping-pong";
+          }
+       else if (number%5 === 0){
+          return "pong";
+          }
+          else if (number%3 === 0){
+             return "ping";
+             }
+       else {
+       return number;
+          }
+    });
+
 
   var number = parseInt($("input#input1").val());
       if (isNaN(number)){
         alert("Please enter a number value!");
-
       }
-      else{
-        var outcome = counters(number);
-      }
-      counters.forEach(function(number){
-        $(".user1").append("<li>"+number+"</li>"+"<br>");
+  pingpong.forEach(function(number){
+    $(".user1").append("<li>"+number+"</li>"+"<br>");
 
-      })
+  })
 
     // removes appended list items when clicked
     $("span.user1").children("li").click(function() {
