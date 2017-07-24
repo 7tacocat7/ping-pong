@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
   $("#footer form").submit(function(event) {
+     $(".user1").empty();
 
 
 //buisness logic
