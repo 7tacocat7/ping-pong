@@ -13,14 +13,10 @@ _Ping-Pongr is a  webpage that takes a number input from a user and returns a ra
 
 | Behavior      | Input         | Output        |
 | ------------- | ------------- | ------------- |
-|Take a number and produce the numbers range in a list|11|(1,2,3,4,5,6,7,8,9,0,11)|
-|Take look at each number in the range starting with the lowest value and determine if the number is divisible by 3. if it is not divisible by 3 seperate the number from the list and pass it along to another list if it is divisible by 3 replace the number with the word "ping" and pass it along to the other list | (1,2,3,4,) |  (1,2,"ping,4")             |
-|Take look a at each number in the new list starting with the lowest value and determine if the number is divisible by 5. if it is not divisible by 5 seperate the number from the list and pass it along to another list if it is divisible by 5 replace the number with the word "pong" and pass it along to the other list|   (1,2,"ping",4,5,6)|(1,2,"ping",4,"pong",6)|
-|Take look a at each number in the new list starting with the lowest value and determine if the number is divisible by 15. if it is not divisible by 15 seperate the number from the list and pass it along to another list if it is divisible by 15 replace the number with the word "pong-pong" and pass it along to the other list|(....13,14,15,16)|(....13,14,"ping-pong",16) |
-|take the newest list and return each item in the list in sequencial order from left to right|(1,2,"ping",4,"pong")|(1)...(2)...(ping)...(4)....(pong)....|
-|               |               |               |
-
-
+|  output can count up to provided number             |    2           |      1 2        |
+|      output can replace numbers divisible by 3 with "ping"         |   3            |  1,2 "ping"             |
+|       output can replace numbers divisible by 5 with "pong"        |     5          |   1,2,"ping",4,5            |
+|       output can replace numbers divisible by 15 with "pingpong"        |     15          |   ..."ping",13,14,"pingpong"           |
 ## Setup/Installation Requirements
 
 * _Clone this repository_
