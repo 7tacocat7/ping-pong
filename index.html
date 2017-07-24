@@ -14,45 +14,65 @@
     <span class="container-fluid">
       <p><h2 class ="text-center">A Game of Champions <br><img src="img/pingpong2.jpg" alt="a photo of a pair of pingpong paddles with a pingpong ball on top." class="img-circle"></h2></p>
     </span>
-    <table>
-      <tr>
-        <td id="sidebar">
-         <img src="img/pingpong1.jpg" alt="a photo of a pair of pingpong paddles with a pingpong ball on top." class="img-circle">
-         <h1>About Ping-Pong</h1>
-         <h2 class="text-left">Created by:</h2>
-         <h4 class="text-center">Carson Canales</h4>
-         <h2 class="text-left">GitHub Username/URL:</h2>
-         <h4 class="text-center"> <a href="https://github.com/7tacocat7"><strong>7tacocat7<Strong></a></h4>
-        </td>
-        <td>
-          <div id="header"><div class="container"><h2 class= "text-left">Let's Begin!</h2></div></div>
-          <div id="content">
-            <h3 class="text-left">Rules:</h3>
-            <p>Ping-Pong  will count up to your number from 1 with the following exceptions:</p>
-            <ol>
-              <li>Numbers divisible by 3 are replaced with "ping"</li>
-              <li>Numbers divisible by 5 are replaced with "pong"</li>
-              <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
-            </ol>
-          </div>
-          <div id="footer">
-              <!-- start of form -->
-            <form class="form-inline">
-              <div class="form-group">
-                <label class="sr-only" for="InputNumber">Enter your number here</label>
-                <div class="input-group">
-                  <div class="input-group-addon"> </div>
-                  <input type="text" class="form-control" id="input1" placeholder="Enter Number">
-                  <div class="input-group-addon"> </div>
-                </div>
+    <div class="row">
+      <div id="sidebar" class="col-md-4">
+        <div id="sidebar">
+          <td >
+           <img src="img/pingpong1.jpg" alt="a photo of a pair of pingpong paddles with a pingpong ball on top." class="img-circle">
+           <h1>About Ping-Pong</h1>
+           <h2 class="text-left">Created by:</h2>
+           <h4 class="text-center">Carson Canales</h4>
+           <h2 class="text-left">GitHub Username/URL:</h2>
+           <h4 class="text-center"> <a href="https://github.com/7tacocat7"><strong>7tacocat7<Strong></a></h4>
+          </td>
+          <td>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <table>
+          <tr>
+            <!-- <td id="sidebar">
+             <img src="img/pingpong1.jpg" alt="a photo of a pair of pingpong paddles with a pingpong ball on top." class="img-circle">
+             <h1>About Ping-Pong</h1>
+             <h2 class="text-left">Created by:</h2>
+             <h4 class="text-center">Carson Canales</h4>
+             <h2 class="text-left">GitHub Username/URL:</h2>
+             <h4 class="text-center"> <a href="https://github.com/7tacocat7"><strong>7tacocat7<Strong></a></h4>
+            </td>
+            <td> -->
+              <div id="header"><div class="container"><h2 class= "text-left">Let's Begin!</h2></div></div>
+              <div id="content">
+                <h3 class="text-left">Rules:</h3>
+                <p>Ping-Pong  will count up to your number from 1 with the following exceptions:</p>
+                <ol>
+                  <li>Numbers divisible by 3 are replaced with "ping"</li>
+                  <li>Numbers divisible by 5 are replaced with "pong"</li>
+                  <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
+                </ol>
               </div>
-              <button type="submit" class="btn btn-primary">Ping-Pong!</button>
-            </form>
-          <!-- end of form -->
-          </div>
-          <span class="user1"><span>
-        </td>
-      </tr>
-    </table>
+              <div id="footer">
+                  <!-- start of form -->
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="InputNumber">Enter your number here</label>
+                    <div class="input-group">
+                      <div class="input-group-addon"> </div>
+                      <input type="text" class="form-control" id="input1" placeholder="Enter Number">
+                      <div class="input-group-addon"> </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Ping-Pong!</button>
+                </form>
+              <!-- end of form -->
+              </div>
+              <div class=" container">
+                <p class="output"></p><span class="user1"><span></p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
   </body>
 </html>

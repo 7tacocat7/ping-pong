@@ -6,12 +6,13 @@ $(document).ready(function(){
   $("#footer form").submit(function(event) {
      $(".user1").empty();
 
-
-//buisness logic
+var inputnumber = parseInt($("input#input1").val());
+//defines the variable inputnumber for use in buisness logic^
+//start of buisness logic
 var start = 0;
 //start of the count^
-var inputnumber = parseInt($("input#input1").val());
-//defines the variable inputnumber for use in buisness logic
+
+
 var numbers = [];
 //creates empty array to store the number count^
 for (var i = start; i < inputnumber+1; i++) {

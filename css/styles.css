@@ -34,3 +34,8 @@ body{
   padding-left: 35px;
   display:none;
 }
+.output {
+  text-align: right;
+  margin-left: 10px;
+  padding-left: 10px;
+}
